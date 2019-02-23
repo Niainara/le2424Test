@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.sign-in{
+    background-image: -webkit-linear-gradient(-89deg, rgba(0, 52, 186, 1) 0%, rgba(23, 52, 189, 1) 26%, rgba(56, 46, 184, 1) 50%, rgba(63, 18, 164, 1) 87%, rgba(70, 0, 147, 1) 100%);
+    background-image: -moz-linear-gradient(-89deg, rgba(0, 52, 186, 1) 0%, rgba(23, 52, 189, 1) 26%, rgba(56, 46, 184, 1) 50%, rgba(63, 18, 164, 1) 87%, rgba(70, 0, 147, 1) 100%);
+    background-image: -o-linear-gradient(-89deg, rgba(0, 52, 186, 1) 0%, rgba(23, 52, 189, 1) 26%, rgba(56, 46, 184, 1) 50%, rgba(63, 18, 164, 1) 87%, rgba(70, 0, 147, 1) 100%);
+    background-image: linear-gradient(-89deg, rgba(0, 52, 186, 1) 0%, rgba(23, 52, 189, 1) 26%, rgba(56, 46, 184, 1) 50%, rgba(63, 18, 164, 1) 87%, rgba(70, 0, 147, 1) 100%);
+}
+
+.sign-in__container{
+    display:flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    max-width: 500px;
+}
+.sign-in__container__header__text{
+    color: white;
+    font-family: 'Nunito';
+    margin: 40px 0 20px 0;
+    font-size: 24px;
+}
+.sign-in__container__form__btn{
+    width:100px;
+    height: 30px;
+    background-color: rgba(252, 108, 95, 1);
+    border-radius: 16px;
+    border:none;
+    margin:30px auto;
+    font-family: 'Nunito';
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.sign-in__container__form__item{
+    width: 100%;
+}
+.form__sign-in{
+    width: 100%;
+    margin: 20px 0;
+    border:none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color:white;
+}
+.text-danger{
+    font-size: 12px;
+    position: absolute;
+}
+.sign-in__container__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .sign-in__container__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .sign-in__container__checkbox__checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #eee;
+  }
+  .sign-in__container__checkbox:hover input ~ .sign-in__container__checkbox__checkmark {
+    background-color: #ccc;
+  }
+
+  .sign-in__container__checkbox input:checked ~ .sign-in__container__checkbox__checkmark {
+    background-color: rgba(252, 108, 95, 1);
+  }
+  .sign-in__container__checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .sign-in__container__checkbox input:checked ~ .sign-in__container__checkbox__checkmark:after {
+    display: block;
+  }
+  .sign-in__container__checkbox .sign-in__container__checkbox__checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 7px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .sign-in__container__options{
+    display:flex;
+    justify-content: space-between;
+  }
+  .sign-in__container__options__password-forgotten{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  .sign-in__container__sign-up{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nunito';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    letter-spacing: 0.03em;
+  }
+  .password-link:hover{
+    text-decoration: none;
+  }
+  .sign-up-link{
+    text-decoration: none;
+    color:rgba(252, 108, 95, 1);
+    margin-left: 10px;
+  }
+  .sign-up-link:hover{
+    text-decoration: none;
+  }
+
+
+  @media only screen  and (min-width : 768px){
+    .sign-in{
+        width:40%;
+    }
+    .sign-in__container{
+        height: 600px;
+        display: flex;
+        margin-top: 100px;
+    }
+    .sign-in__container__header__text{
+        margin: 80px 0 0 0;
+    }
+}

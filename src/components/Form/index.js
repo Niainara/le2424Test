@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import './index.css';
+import Logo from '../Logo/index';
 
 const validate = values => {
   const errors = {}
@@ -32,7 +33,7 @@ const renderField = ({
       <div className="signup-container__form__field__item">
         <input {...input} placeholder={label} type={type} className="form-control" />
         {touched &&
-          ((error && <span className="required-tooltip">{error}</span>) ||
+          ((error && <span className="required-tooltip__text">{error}</span>) ||
             (warning && <span>{warning}</span>))}
       </div>
     </div>
@@ -42,7 +43,9 @@ const renderField = ({
 let SignUp = props => {
     const { handleSubmit, pristine, submitting } = props;
     return (
+      <div className="signup">
         <div className="signup-container">
+        <Logo />
           <div>
             <p className="signup-container__text">Hey!
             <br/> Thomas Acchiardo has invited you to the project Dimtech - mobile.</p>
@@ -64,6 +67,7 @@ let SignUp = props => {
                 <button type="submit" className="signup-container__btn">Create Account</button>
             </form>
         </div>
+      </div>
     )
 };
 SignUp = reduxForm({

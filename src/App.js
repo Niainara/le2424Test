@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import SignUp from './components/Form/index';
-import './App.css';
+import Home from './components/Home/index';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 class App extends Component {
   submit = values => {
@@ -9,9 +11,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <SignUp onSubmit={this.submit} />
-      </div>
+      <BrowserRouter>
+        <Switch>
+        <Route path={['/', '/home']} exact component={Home} />
+        <Route path="/sign-up" exact component={SignUp} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
