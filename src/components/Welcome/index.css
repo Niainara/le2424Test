@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.welcome{
+    width:100%;
+}
+.welcome-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    width: 85%;
+    margin: auto;
+}
+.welcome-container__content__header{
+    margin: auto;
+}
+.welcome-container__header__logo{
+    display: flex;
+    margin:20px auto;
+    height: 40px;
+    width: 123px;
+}
+.welcome-container__header__text{
+    font-family: 'Nunito';
+    font-size: 18px;
+    color: rgba(63, 64, 72, 1);
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 24px;
+}
+.welcome-container__description{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.welcome-container__description__text{
+width: 100%;
+max-width: 500px;
+font-family: 'Nunito';
+font-size: 10px;
+color: rgba(63, 64, 72, 1);
+text-align: justify;
+letter-spacing: 0.03em;
+line-height: 19px;
+Letter-spacing: 3% ;
+}
+.welcome-container__button{
+    margin:0 auto;
+    display:flex;
+}
+.welcome-container__btn{
+    width:100px;
+    height: 30px;
+    background-color: rgba(252, 108, 95, 1);
+    border-radius: 16px;
+    border:none;
+    margin:auto;
+    font-family: 'Nunito';
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+@media only screen  and (min-width : 768px){
+    .welcome{
+        height:100vh;
+        width: 60%;
+    }
+    .welcome-container{
+        height:100vh;
+        justify-content: center;
+        margin-left:5%;
+    }
+    .welcome-container__header__logo{
+        position: absolute;
+        top: 52px;
+        height: 40px;
+        width: 123px;
+    }
+    .welcome-container__header__text{
+        text-align: left;
+        width: 500px;
+        margin: 140px auto 0 auto;
+    }
+    .welcome-container__content{
+        height:800px;
+        margin-top: 40px;
+    }
+    .welcome-container__content__header{
+        width:500px;
+    }
+    .welcome-container__button{
+        width:500px;
+        margin:0 auto;
+        display: block;
+    }
+}
